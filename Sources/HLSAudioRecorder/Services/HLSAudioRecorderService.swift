@@ -22,7 +22,6 @@ public protocol HLSAudioRecorderServiceDelegate: AnyObject {
   func captureOutput(averagePowerLevel: Float)
 }
 
-// Default implementations
 public extension HLSAudioRecorderServiceDelegate {
   func captureOutput(sampleBuffer: CMSampleBuffer) {}
   func captureOutput(peakHoldLevel: Float) {}

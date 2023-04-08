@@ -89,6 +89,7 @@ public final class DefaultHLSAudioRecorderService: NSObject, HLSAudioRecorderSer
   }
 
   private func reset() {
+    segmentIndex = 0
     captureSession = nil
     audioDataOutput = nil
     assetWriter = nil
